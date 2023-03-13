@@ -13,19 +13,25 @@ export default function Home() {
   return (
     <div>
       <div>
-        <img src={beersImage} width='100%' alt='beers-pic' />
-        <Link to={'/beers'}>All Beers</Link>
-        <LoremIpsum p={lorIpPar} avgWordsPerSentence={lorIpWor} random={lorIpRan} />
+        <Link to={'/beers'}>
+          <img src={beersImage} width='100%' alt='beers-pic' />
+          <h2>All Beers</h2>
+          <LoremIpsum p={lorIpPar} avgWordsPerSentence={lorIpWor} random={lorIpRan} />
+        </Link>
       </div>
       <div>
-        <img src={RandomBeerImage} width='100%' alt='random-beer-pic' />
-        <Link to={'/random-beer'}>Random Beer</Link>
-        <LoremIpsum p={lorIpPar} avgWordsPerSentence={lorIpWor} random={lorIpRan} />
+        <Link to={'/random-beer'}>
+          <img src={RandomBeerImage} width='100%' alt='random-beer-pic' />
+          <h2>Random Beer</h2>
+          <LoremIpsum p={lorIpPar} avgWordsPerSentence={lorIpWor} random={lorIpRan} />
+        </Link>
       </div>
       <div>
-        <img src={newBeerImage} width='100%' alt='new-beer-pic' />
-        <Link to={'/new-beer'}>New Beer</Link>
-        <LoremIpsum p={lorIpPar} avgWordsPerSentence={lorIpWor} random={lorIpRan} />
+        <Link to={'/new-beer'}>
+          <img src={newBeerImage} width='100%' alt='new-beer-pic' />
+          <h2>New Beer</h2>
+          <LoremIpsum p={lorIpPar} avgWordsPerSentence={lorIpWor} random={lorIpRan} />
+        </Link>
       </div>
     </div>
   )

@@ -3,8 +3,9 @@ import Header from '../components/Header';
 
 export default function NewBeer() {
   return (
-    <div>NewBeer
+    <div>
       <Header />
+      NewBeer
     </div>
   )
 }

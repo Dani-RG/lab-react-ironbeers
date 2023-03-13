@@ -3,8 +3,9 @@ import Header from '../components/Header';
 
 export default function RandomBeer() {
   return (
-    <div>RandomBeer
+    <div>
      <Header />
+     RandomBeer
     </div>
   )
 }
