@@ -90,3 +90,59 @@ ul {
   text-align: left;
   margin-right: 1rem;
 }
+
+.beer-table {
+  width: 100%;
+}
+
+.one-beer {
+  margin: 1rem;
+ }
+
+.one-beer img {
+  height: 15rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.one-beer h1 {
+ font-size: 1.7rem;
+ font-weight: 300;
+}
+
+.one-beer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-new-beer {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-new-beer label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  margin-left: 1rem;
+}
+
+.form-new-beer input {
+  border-style: solid;
+  margin-bottom: 2rem;
+  margin-top: 0.1rem;
+  height: 2rem;
+  border-radius: 50px;
+  border-width: 0.15rem;
+  border-color: lightgray;
+}
+
+.form-new-beer button {
+  border-style: none;
+  border-radius: 50px;
+  height: 2rem;
+  background-color: lightskyblue;
+  color: white;
+}

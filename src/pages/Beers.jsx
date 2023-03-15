@@ -11,7 +11,6 @@ export default function Beers() {
     try {
       const response = await axios.get('https://ih-beers-api2.herokuapp.com/beers');
       setBeers(response.data);
-      console.log(response.data);
     } catch(error) {
       console.error(error)
     }
@@ -27,7 +26,7 @@ export default function Beers() {
       {beers.map(elem => {
         return (
           <div key={elem._id}>
-            <Link to={'/beers/:beerId'}>
+            <Link to={`/beers/${elem._id}`}>
               <table className='beers-table'>
                 <tbody>
                   <tr>

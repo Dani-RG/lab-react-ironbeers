@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Header from '../components/Header'
 
-export default function RandomBeer() {
+export default function SingleBeer() {
+  const { beerId } = useParams();
   const [beer, setBeer] = useState({});
 
   const getBeer = async () => {
     try {
-      const response = await axios.get('https://ih-beers-api2.herokuapp.com/beers/random');
+      const response = await axios.get(`https://ih-beers-api2.herokuapp.com/beers/${beerId}`);
       setBeer(response.data);
     } catch (error) {
       console.error(error)

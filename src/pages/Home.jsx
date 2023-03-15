@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import beersImage from '../assets/beers.png'
 import RandomBeerImage from '../assets/random-beer.png'
 import newBeerImage from '../assets/new-beer.png'
-import { LoremIpsum } from 'react-lorem-ipsum';
+import { LoremIpsum } from 'react-lorem-ipsum'
 
 const lorIpPar = 1;
 const lorIpWor = 4;
